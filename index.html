@@ -6,6 +6,19 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .companieslist{
+            animation: 3s infinite linear movecompany;
+        }
+        @keyframes movecompany{
+            0%{
+                top:0;
+            }
+            100%{
+                top:-10%;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="bg-red-400 flex flex-col">
@@ -690,17 +703,64 @@
                       <div class=" text-[8px] mt-3 mb-20">Focus on your business while we handle the complexities of payments for you</div>
                  </div>
                  <!-- right box -->
-                  <div class=" flex relative w-200 h-80 items-center">
+                  <div class=" flex relative w-200 h-35 overflow-y-hidden items-center">
                     <!-- gradient -->
-                    <div class=" flex  mt-0 bg-linear-to-b from-indigo-100 to-white-200 h-20 w-77 top-0 z-1 absolute"></div>
-                    <div class="bg-linear-to-b from-white-200 to-indigo-100 h-3 absolute h-40 mt-30 w-77 z-1"></div>
+                    <div class=" flex  mt-0 bg-linear-to-b from-indigo-100 to-white-200 h-30 w-77 -top-10 z-1 absolute"></div>
+                    <div class="bg-linear-to-b from-white-200 to-indigo-100 h-3 absolute h-10 -bottom-25 w-77 z-1"></div>
                     <!-- image -->
-                     <div class=" ">
-                        <img src="animation image/1.png" alt=" Floating image"  class="mr-2 cover animate-bounce w-[700px]">
+                     <div class="  ">
+                        <img src="animation image/1.png" alt=" Floating image"  class="mr-2  cover companieslist absolute w-[700px]">
                      </div>
                   </div>
             </div>
         </div>
+    </section>
+
+    <section class="">
+        <!-- main container  -->
+        <div class=" w-full flex justify-center ">
+            <div class=" flex justify-center flex-col w-[60%] pb-10 ">
+                <!-- heading  -->
+                 <div class="   text-center font-bold text-[20px] leading-10">An Experience<br> people Love  to Talk About</div>
+                 <!-- main div  -->
+                  <div class=" flex relative  justify-center ">
+                    <!-- arrow image -->
+                     <div class=" rounded-full bg-red-400 w-10 h-10 absolute top-[40%] left-[8%] rotate-[180deg] hover:scale-105">
+                        <i
+                            data-feather="chevron-right"
+                            class=" w-10 h-10 "></i> 
+                       
+                     </div>
+                     <div class=" rounded-full bg-red-400 w-10 h-10 absolute top-[40%] right-[8%] hover:scale-105   ">
+                        <i
+                        data-feather="chevron-right"
+                        class=" w-10 h-10 "></i> 
+                     </div>
+                     <!-- image -->
+                      <div class="flex  justify-center   ">
+                        <div class=" overflow-hidden w-60 h-50 ">
+                            <img src="founderimage/Gautam-Kumar1.jpg" class="w-60 h-full">
+                          </div>
+                          <!-- contant -->
+                           <div class="  flex flex-col w-[40%]  ">
+                            <div class=" font-[500 ] 
+                            mx-5 mt-6 text-gray-400">Readymade Closed Wallet Solution For Quick Refunds</div>
+                            <div class=" mx-5 -mt-2 text-[10px]">
+                                <a href="#" class=" hover:text-blue-500"> Learn More</a>
+                            </div>
+                            <div class=" mx-5 ">
+                                <h3 class="font-[500] text-black-800">Lorem Ipsum</h3>
+                                <p class="text-gray-600">CEO, XYZ Engineering Company</p>
+                            </div>
+                           </div>
+                      </div>
+                      
+                  </div>
+
+            </div>
+
+        </div>
+
     </section>
 
 
